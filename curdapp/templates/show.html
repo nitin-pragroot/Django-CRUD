@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShowPage</title>
+    <style>
+   table,tr,th,td
+   {
+   border:1px solid black;
+   border-collapse:collapse;
+   }
+    </style>
+</head>
+<body>
+<h2>Show Data Table</h2>
+<table>
+     <tr>
+         <th>ID</th>
+         <th>Firstname</th>
+         <th>Lastname</th>
+         <th>Email</th>
+         <th>Contact</th>
+         <th>Edit</th>
+         <th>Delete</th>
+     </tr>
+    {%for i in key1%}
+    <tr>
+         <td>{{i.id}}</td>
+         <td>{{i.Firstname}}</td>
+         <td>{{i.Lastname}}</td>
+         <td>{{i.Email}}</td>
+         <td>{{i.Contact}}</td>
+         <td>
+             <a href="/editpage/{{i.id}}">Edit</a>
+         </td>
+        <td>
+             <a href="/delete/{{i.id}}">Delete</a>
+         </td>
+     </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body
+{
+    background-color:cyan;
+}
+#head
+{
+    text-align:center;
+    max-width:80%;
+    padding:0.5%;
+    margin-left:9%;
+    background-color:#fff;
+}
+table
+{
+    border-collapse:collapse;
+    width:90%;
+    margin:20px;
+}
+td,th
+{
+    border:2px solid;
+    text-align:center;
+}
